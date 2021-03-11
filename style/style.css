@@ -8,25 +8,23 @@
           box-sizing: border-box;
 }
 
-body {
+html, body {
+  width: 100%;
+  height: 100%;
   overflow-x: hidden;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 body::-webkit-scrollbar {
-  width: 0px;
+  width: -0;
 }
 
 .navbar {
   height: 60px;
-}
-
-.sticky {
   width: 100%;
   background-color: #000;
   position: fixed;
   top: 0;
+  left: 0;
   -webkit-transition: .4s;
   transition: .4s;
   z-index: 1;
@@ -745,6 +743,9 @@ body::-webkit-scrollbar {
   .services-section .service-wrap .title p {
     font-size: 13px;
   }
+  .services-section .service-wrap .title .text {
+    padding: 0 1em;
+  }
   .services-section .service-wrap .row .box {
     width: 100%;
     height: auto;
@@ -762,6 +763,12 @@ body::-webkit-scrollbar {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .services-section .service-wrap .row .box .wrap-box .media-body h1 {
+    font-size: 16px;
+  }
+  .services-section .service-wrap .row .box .wrap-box .media-body p {
+    font-size: 11px;
   }
   .services-section .service-wrap .row .box .wrap-box {
     width: 100%;
@@ -938,7 +945,7 @@ body::-webkit-scrollbar {
 
 .price-container .wrap-container .price-list .list-wrap .text h1 {
   font-size: 20px;
-  color: #8d8989;
+  color: #a8a8a8;
 }
 
 .price-container .wrap-container .price-list .list-wrap .text p {
@@ -961,7 +968,7 @@ body::-webkit-scrollbar {
   }
   .price-container .wrap-container .title .text {
     font-size: 13px;
-    padding: 0 4em;
+    padding: 0 1em;
   }
   .price-container .wrap-container .price-list {
     display: -webkit-box;
@@ -974,15 +981,15 @@ body::-webkit-scrollbar {
     padding: 1em;
   }
   .price-container .wrap-container .price-list .list-wrap .text h1 {
-    font-size: 16px;
-    color: #8d8989;
+    font-size: 15px;
+    color: #a8a8a8;
   }
   .price-container .wrap-container .price-list .list-wrap .text p {
-    font-size: 13px;
+    font-size: 12px;
     color: #8d8989;
   }
   .price-container .wrap-container .price-list .list-wrap .price p {
-    font-size: 16px;
+    font-size: 15px;
     color: #ce9c6b;
   }
 }
@@ -1140,7 +1147,7 @@ body::-webkit-scrollbar {
   }
   .gallery-section .title .text {
     font-size: 13px;
-    padding: 0 4em;
+    padding: 0 1em;
   }
   .gallery-section .gallery .gallery-cell {
     width: 75%;
@@ -1378,7 +1385,7 @@ body::-webkit-scrollbar {
   background-color: #1b1b1b;
   text-align: center;
   color: #8d8989;
-  font-size: 18px;
+  font-size: 13px;
 }
 
 .footer-tagline p {
@@ -1388,10 +1395,11 @@ body::-webkit-scrollbar {
 
 .footer-tagline a {
   text-decoration: none;
-  color: white;
-  font-size: 20px;
+  color: #a8a8a8;
+  font-size: 14px;
   -webkit-transition: .4s;
   transition: .4s;
+  font-weight: 300;
 }
 
 .footer-tagline a:hover {
@@ -1401,10 +1409,10 @@ body::-webkit-scrollbar {
 
 @media screen and (max-width: 600px) {
   .footer-tagline {
-    font-size: 15px;
+    font-size: 12px;
   }
   .footer-tagline a {
-    font-size: 17px;
+    font-size: 13px;
   }
 }
 
